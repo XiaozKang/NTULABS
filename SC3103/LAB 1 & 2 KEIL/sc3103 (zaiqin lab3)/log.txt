@@ -1,0 +1,960 @@
+hwlab@hwl1-va50:~/sc3103/tcec$ whoami
+hwlab
+hwlab@hwl1-va50:~/sc3103/tcec$ date
+Fri 20 Sep 2024 02:10:05 PM +08
+hwlab@hwl1-va50:~/sc3103/tcec$ time
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+hwlab@hwl1-va50:~/sc3103/tcec$ pwd
+/home/hwlab/sc3103/tcec
+hwlab@hwl1-va50:~/sc3103/tcec$ ps
+    PID TTY          TIME CMD
+   3566 pts/0    00:00:00 bash
+   5362 pts/0    00:00:00 ps
+hwlab@hwl1-va50:~/sc3103/tcec$ ps -A
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 pool_workqueue_release
+      4 ?        00:00:00 kworker/R-rcu_g
+      5 ?        00:00:00 kworker/R-rcu_p
+      6 ?        00:00:00 kworker/R-slub_
+      7 ?        00:00:00 kworker/R-netns
+      9 ?        00:00:00 kworker/0:0H-events_highpri
+     10 ?        00:00:00 kworker/0:1-events
+     12 ?        00:00:00 kworker/R-mm_pe
+     13 ?        00:00:00 rcu_tasks_kthread
+     14 ?        00:00:00 rcu_tasks_rude_kthread
+     15 ?        00:00:00 rcu_tasks_trace_kthread
+     16 ?        00:00:00 ksoftirqd/0
+     17 ?        00:00:01 rcu_preempt
+     18 ?        00:00:00 migration/0
+     19 ?        00:00:00 idle_inject/0
+     20 ?        00:00:00 cpuhp/0
+     21 ?        00:00:00 cpuhp/1
+     22 ?        00:00:00 idle_inject/1
+     23 ?        00:00:00 migration/1
+     24 ?        00:00:00 ksoftirqd/1
+     26 ?        00:00:00 kworker/1:0H-events_highpri
+     27 ?        00:00:00 cpuhp/2
+     28 ?        00:00:00 idle_inject/2
+     29 ?        00:00:00 migration/2
+     30 ?        00:00:00 ksoftirqd/2
+     31 ?        00:00:00 kworker/2:0-events
+     32 ?        00:00:00 kworker/2:0H-events_highpri
+     33 ?        00:00:00 cpuhp/3
+     34 ?        00:00:00 idle_inject/3
+     35 ?        00:00:00 migration/3
+     36 ?        00:00:00 ksoftirqd/3
+     37 ?        00:00:00 kworker/3:0-events
+     38 ?        00:00:00 kworker/3:0H-events_highpri
+     39 ?        00:00:00 cpuhp/4
+     40 ?        00:00:00 idle_inject/4
+     41 ?        00:00:00 migration/4
+     42 ?        00:00:00 ksoftirqd/4
+     44 ?        00:00:00 kworker/4:0H-events_highpri
+     45 ?        00:00:00 cpuhp/5
+     46 ?        00:00:00 idle_inject/5
+     47 ?        00:00:00 migration/5
+     48 ?        00:00:00 ksoftirqd/5
+     49 ?        00:00:00 kworker/5:0-events
+     50 ?        00:00:00 kworker/5:0H-events_highpri
+     51 ?        00:00:00 cpuhp/6
+     52 ?        00:00:00 idle_inject/6
+     53 ?        00:00:00 migration/6
+     54 ?        00:00:00 ksoftirqd/6
+     56 ?        00:00:00 kworker/6:0H-events_highpri
+     57 ?        00:00:00 cpuhp/7
+     58 ?        00:00:00 idle_inject/7
+     59 ?        00:00:00 migration/7
+     60 ?        00:00:00 ksoftirqd/7
+     62 ?        00:00:00 kworker/7:0H-events_highpri
+     63 ?        00:00:00 cpuhp/8
+     64 ?        00:00:00 idle_inject/8
+     65 ?        00:00:00 migration/8
+     66 ?        00:00:00 ksoftirqd/8
+     68 ?        00:00:00 kworker/8:0H-events_highpri
+     69 ?        00:00:00 cpuhp/9
+     70 ?        00:00:00 idle_inject/9
+     71 ?        00:00:00 migration/9
+     72 ?        00:00:00 ksoftirqd/9
+     75 ?        00:00:00 cpuhp/10
+     76 ?        00:00:00 idle_inject/10
+     77 ?        00:00:00 migration/10
+     78 ?        00:00:00 ksoftirqd/10
+     80 ?        00:00:00 kworker/10:0H-events_highpri
+     81 ?        00:00:00 cpuhp/11
+     82 ?        00:00:00 idle_inject/11
+     83 ?        00:00:00 migration/11
+     84 ?        00:00:00 ksoftirqd/11
+     86 ?        00:00:00 kworker/11:0H-events_highpri
+     87 ?        00:00:00 cpuhp/12
+     88 ?        00:00:00 idle_inject/12
+     89 ?        00:00:00 migration/12
+     90 ?        00:00:00 ksoftirqd/12
+     92 ?        00:00:00 kworker/12:0H-events_highpri
+     93 ?        00:00:00 cpuhp/13
+     94 ?        00:00:00 idle_inject/13
+     95 ?        00:00:00 migration/13
+     96 ?        00:00:00 ksoftirqd/13
+     97 ?        00:00:00 kworker/13:0-events
+     98 ?        00:00:00 kworker/13:0H-events_highpri
+     99 ?        00:00:00 cpuhp/14
+    100 ?        00:00:00 idle_inject/14
+    101 ?        00:00:00 migration/14
+    102 ?        00:00:00 ksoftirqd/14
+    104 ?        00:00:00 kworker/14:0H-events_highpri
+    105 ?        00:00:00 cpuhp/15
+    106 ?        00:00:00 idle_inject/15
+    107 ?        00:00:00 migration/15
+    108 ?        00:00:00 ksoftirqd/15
+    110 ?        00:00:00 kworker/15:0H-events_highpri
+    111 ?        00:00:00 kdevtmpfs
+    112 ?        00:00:00 kworker/R-inet_
+    113 ?        00:00:00 kauditd
+    115 ?        00:00:00 khungtaskd
+    116 ?        00:00:00 oom_reaper
+    118 ?        00:00:00 kworker/R-write
+    119 ?        00:00:00 kcompactd0
+    120 ?        00:00:00 ksmd
+    122 ?        00:00:00 khugepaged
+    123 ?        00:00:00 kworker/R-kinte
+    124 ?        00:00:00 kworker/R-kbloc
+    125 ?        00:00:00 kworker/R-blkcg
+    126 ?        00:00:00 irq/9-acpi
+    127 ?        00:00:00 kworker/5:1-cgroup_destroy
+    128 ?        00:00:00 kworker/8:1-mm_percpu_wq
+    129 ?        00:00:00 kworker/R-tpm_d
+    130 ?        00:00:00 kworker/R-ata_s
+    131 ?        00:00:00 kworker/R-md
+    132 ?        00:00:00 kworker/R-md_bi
+    133 ?        00:00:00 kworker/R-edac-
+    134 ?        00:00:00 kworker/R-devfr
+    135 ?        00:00:00 watchdogd
+    136 ?        00:00:00 kworker/8:1H-kblockd
+    137 ?        00:00:00 kworker/4:1-events_freezable
+    138 ?        00:00:00 kswapd0
+    139 ?        00:00:00 ecryptfs-kthread
+    140 ?        00:00:00 kworker/R-kthro
+    141 ?        00:00:00 irq/123-aerdrv
+    142 ?        00:00:00 irq/123-pcie-dpc
+    143 ?        00:00:00 kworker/R-acpi_
+    144 ?        00:00:00 hwrng
+    145 ?        00:00:00 kworker/12:1-events
+    146 ?        00:00:00 kworker/R-mld
+    147 ?        00:00:00 kworker/R-ipv6_
+    154 ?        00:00:00 kworker/R-kstrp
+    155 ?        00:00:00 kworker/1:1-i915-unordered
+    156 ?        00:00:00 kworker/7:1-events
+    157 ?        00:00:00 kworker/2:1-cgroup_destroy
+    158 ?        00:00:00 kworker/9:1-events
+    159 ?        00:00:00 kworker/10:1-events
+    160 ?        00:00:00 kworker/11:1-events
+    161 ?        00:00:00 kworker/14:1-events
+    177 ?        00:00:00 kworker/R-charg
+    196 ?        00:00:00 kworker/11:1H-kblockd
+    200 ?        00:00:00 kworker/12:1H-kblockd
+    201 ?        00:00:00 kworker/14:1H-kblockd
+    213 ?        00:00:00 kworker/15:1H-kblockd
+    215 ?        00:00:00 kworker/1:1H-kblockd
+    216 ?        00:00:00 kworker/5:1H-kblockd
+    217 ?        00:00:00 kworker/10:1H-kblockd
+    218 ?        00:00:00 kworker/2:1H-kblockd
+    219 ?        00:00:00 kworker/3:1H-kblockd
+    220 ?        00:00:00 kworker/7:1H-kblockd
+    221 ?        00:00:00 kworker/4:1H-kblockd
+    223 ?        00:00:00 kworker/0:1H-kblockd
+    226 ?        00:00:00 kworker/6:1H-kblockd
+    229 ?        00:00:00 kworker/9:1H-kblockd
+    243 ?        00:00:00 kworker/13:1H-kblockd
+    244 ?        00:00:00 kworker/4:2-cgroup_destroy
+    266 ?        00:00:00 kworker/R-nvme-
+    267 ?        00:00:00 kworker/R-nvme-
+    269 ?        00:00:00 kworker/R-nvme-
+    271 ?        00:00:00 kworker/R-nvme-
+    277 ?        00:00:00 kworker/3:1-cgroup_destroy
+    278 ?        00:00:00 scsi_eh_0
+    279 ?        00:00:00 kworker/R-scsi_
+    280 ?        00:00:00 scsi_eh_1
+    281 ?        00:00:00 kworker/R-scsi_
+    282 ?        00:00:00 scsi_eh_2
+    283 ?        00:00:00 kworker/R-scsi_
+    284 ?        00:00:00 scsi_eh_3
+    285 ?        00:00:00 kworker/R-scsi_
+    286 ?        00:00:01 kworker/u32:3-events_power_efficient
+    287 ?        00:00:03 kworker/u32:4-writeback
+    288 ?        00:00:05 kworker/u32:5-flush-8:16
+    299 ?        00:00:00 kworker/6:2-events
+    300 ?        00:00:00 kworker/6:3-events
+    301 ?        00:00:00 kworker/11:2-mm_percpu_wq
+    306 ?        00:00:00 scsi_eh_4
+    307 ?        00:00:00 kworker/R-scsi_
+    308 ?        00:00:01 usb-storage
+    309 ?        00:00:00 kworker/R-uas
+    330 ?        00:00:00 jbd2/sdb2-8
+    331 ?        00:00:00 kworker/R-ext4-
+    343 ?        00:00:00 kworker/8:2-inet_frag_wq
+    371 ?        00:00:00 systemd-journal
+    390 ?        00:00:00 kworker/7:2-events
+    398 ?        00:00:00 kworker/12:2
+    423 ?        00:00:00 systemd-udevd
+    474 ?        00:00:00 kworker/14:2-events
+    477 ?        00:00:00 kworker/10:2-cgroup_destroy
+    480 ?        00:00:00 kworker/9:2H-kblockd
+    483 ?        00:00:01 kworker/1:2-events
+    516 ?        00:00:00 irq/151-mei_me
+    518 ?        00:00:00 kworker/R-crypt
+    519 ?        00:00:08 kworker/u32:7-flush-8:16
+    521 ?        00:00:00 kworker/u32:8-events_unbound
+    523 ?        00:00:03 kworker/u32:10-events_unbound
+    556 ?        00:00:00 kworker/R-cfg80
+    572 ?        00:00:00 kworker/0:2-events
+    604 ?        00:00:00 kworker/15:2-events
+    608 ?        00:00:00 irq/152-iwlwifi:default_queue
+    609 ?        00:00:00 irq/153-iwlwifi:queue_1
+    610 ?        00:00:00 irq/154-iwlwifi:queue_2
+    611 ?        00:00:00 irq/155-iwlwifi:queue_3
+    612 ?        00:00:00 irq/156-iwlwifi:queue_4
+    613 ?        00:00:00 irq/157-iwlwifi:queue_5
+    614 ?        00:00:00 irq/158-iwlwifi:queue_6
+    615 ?        00:00:00 irq/159-iwlwifi:queue_7
+    616 ?        00:00:00 irq/160-iwlwifi:queue_8
+    617 ?        00:00:00 irq/161-iwlwifi:queue_9
+    618 ?        00:00:00 irq/162-iwlwifi:queue_10
+    619 ?        00:00:00 irq/163-iwlwifi:queue_11
+    620 ?        00:00:00 irq/164-iwlwifi:queue_12
+    621 ?        00:00:00 irq/165-iwlwifi:queue_13
+    622 ?        00:00:00 irq/166-iwlwifi:queue_14
+    623 ?        00:00:00 irq/167-iwlwifi:exception
+    639 ?        00:00:00 kworker/u33:1-ttm
+    642 ?        00:00:00 kworker/9:2-events
+    651 ?        00:00:00 kworker/R-ttm
+    652 ?        00:00:00 card1-crtc0
+    653 ?        00:00:00 card1-crtc1
+    654 ?        00:00:00 card1-crtc2
+    655 ?        00:00:00 kworker/5:3-cgroup_destroy
+    832 ?        00:00:00 kworker/R-nvkm-
+    841 ?        00:00:00 kworker/R-ttm
+    842 ?        00:00:00 card0-crtc0
+    843 ?        00:00:00 card0-crtc1
+    844 ?        00:00:00 card0-crtc2
+    845 ?        00:00:00 card0-crtc3
+    853 ?        00:00:00 systemd-oomd
+    854 ?        00:00:00 systemd-resolve
+    855 ?        00:00:00 systemd-timesyn
+    965 ?        00:00:00 accounts-daemon
+    966 ?        00:00:00 acpid
+    967 ?        00:00:00 anacron
+    969 ?        00:00:51 avahi-daemon
+    970 ?        00:00:00 bluetoothd
+    971 ?        00:00:00 cron
+    972 ?        00:00:02 dbus-daemon
+    973 ?        00:00:04 NetworkManager
+    980 ?        00:00:00 irqbalance
+    981 ?        00:00:00 networkd-dispat
+    982 ?        00:00:00 polkitd
+    983 ?        00:00:00 power-profiles-
+    984 ?        00:00:00 rsyslogd
+    987 ?        00:00:01 snapd
+    988 ?        00:00:00 switcheroo-cont
+    989 ?        00:00:00 systemd-logind
+    990 ?        00:00:00 thermald
+    991 ?        00:00:00 udisksd
+    992 ?        00:00:00 wpa_supplicant
+   1012 ?        00:00:00 avahi-daemon
+   1090 ?        00:00:00 cupsd
+   1093 ?        00:00:00 unattended-upgr
+   1098 ?        00:00:00 ModemManager
+   1105 ?        00:00:01 mono
+   1253 ?        00:00:01 cups-browsed
+   1259 ?        00:00:00 kerneloops
+   1261 ?        00:00:00 kerneloops
+   1279 ?        00:00:00 kworker/13:3-events
+   1284 ?        00:00:00 gdm3
+   1289 ?        00:00:00 gdm-session-wor
+   1294 ?        00:00:00 systemd
+   1295 ?        00:00:00 (sd-pam)
+   1301 ?        00:00:00 pipewire
+   1302 ?        00:00:00 pipewire-media-
+   1303 ?        00:00:00 pulseaudio
+   1321 ?        00:00:00 dbus-daemon
+   1323 ?        00:00:00 gnome-keyring-d
+   1327 ?        00:00:00 rtkit-daemon
+   1329 tty2     00:00:00 gdm-wayland-ses
+   1335 tty2     00:00:00 gnome-session-b
+   1336 ?        00:00:00 xdg-document-po
+   1349 ?        00:00:00 xdg-permission-
+   1366 ?        00:00:00 fusermount3
+   1377 ?        00:00:00 dbus
+   1385 ?        00:00:00 colord
+   1422 ?        00:00:00 gnome-session-c
+   1432 ?        00:00:00 gvfsd
+   1441 ?        00:00:00 krfcommd
+   1444 ?        00:00:00 gvfsd-fuse
+   1446 ?        00:00:00 gnome-session-b
+   1480 ?        00:00:00 at-spi-bus-laun
+   1483 ?        00:00:12 gnome-shell
+   1490 ?        00:00:00 dbus-daemon
+   1509 ?        00:00:00 su
+   1511 ?        00:00:00 mono
+   1563 ?        00:00:00 gnome-shell-cal
+   1565 ?        00:00:00 upowerd
+   1567 ?        00:00:00 snapd-desktop-i
+   1626 ?        00:00:00 snapd-desktop-i
+   1630 ?        00:00:00 evolution-sourc
+   1631 ?        00:00:00 gvfs-udisks2-vo
+   1655 ?        00:00:00 gvfs-afc-volume
+   1663 ?        00:00:00 gvfs-gphoto2-vo
+   1667 ?        00:00:00 gvfs-mtp-volume
+   1671 ?        00:00:00 gvfs-goa-volume
+   1675 ?        00:00:00 goa-daemon
+   1679 ?        00:00:00 evolution-calen
+   1690 ?        00:00:00 dconf-service
+   1691 ?        00:00:00 evolution-addre
+   1702 ?        00:00:00 goa-identity-se
+   1713 ?        00:00:04 packagekitd
+   1723 ?        00:00:00 gvfsd-trash
+   1731 ?        00:00:00 gjs
+   1733 ?        00:00:00 at-spi2-registr
+   1751 ?        00:00:00 sh
+   1752 ?        00:00:00 gsd-a11y-settin
+   1754 ?        00:00:01 ibus-daemon
+   1755 ?        00:00:00 gsd-color
+   1756 ?        00:00:00 gsd-datetime
+   1758 ?        00:00:00 gsd-housekeepin
+   1760 ?        00:00:00 gsd-keyboard
+   1762 ?        00:00:00 gsd-media-keys
+   1763 ?        00:00:00 gsd-power
+   1766 ?        00:00:00 gsd-print-notif
+   1767 ?        00:00:00 gsd-rfkill
+   1768 ?        00:00:00 gsd-screensaver
+   1769 ?        00:00:00 gsd-sharing
+   1770 ?        00:00:00 gsd-smartcard
+   1771 ?        00:00:00 gsd-sound
+   1772 ?        00:00:00 gsd-wacom
+   1840 ?        00:00:00 evolution-alarm
+   1842 ?        00:00:00 gsd-disk-utilit
+   1855 ?        00:00:00 ibus-dconf
+   1875 ?        00:00:00 ibus-extension-
+   1880 ?        00:00:00 ibus-portal
+   1886 ?        00:00:01 snap-store
+   1927 ?        00:00:00 gsd-printer
+   2004 ?        00:00:00 ibus-engine-sim
+   2013 ?        00:00:00 gjs
+   2032 ?        00:00:00 tracker-miner-f
+   2034 ?        00:00:00 gjs
+   2047 ?        00:00:00 xdg-desktop-por
+   2081 ?        00:00:00 xdg-desktop-por
+   2096 ?        00:00:00 xdg-desktop-por
+   2134 ?        00:00:00 gvfsd-metadata
+   2150 ?        00:00:01 fwupd
+   3235 ?        00:00:00 kworker/1:3-events
+   3240 ?        00:00:00 dbus
+   3247 ?        00:00:00 kworker/15:3-cgwb_release
+   3272 ?        00:00:00 gnome-calendar
+   3288 ?        00:00:01 gnome-terminal-
+   3351 ?        00:00:00 kworker/u33:4-ttm
+   3352 ?        00:00:00 kworker/u33:5-ttm
+   3353 ?        00:00:00 kworker/u33:6-ttm
+   3360 ?        00:00:00 kworker/u33:13-ttm
+   3362 ?        00:00:00 kworker/u33:15-ttm
+   3566 pts/0    00:00:00 bash
+   3596 ?        00:00:00 update-notifier
+   3760 ?        00:00:16 firefox
+   3923 ?        00:00:00 Socket Process
+   3939 ?        00:00:00 Privileged Cont
+   3983 ?        00:00:00 snap
+   4123 ?        00:00:00 WebExtensions
+   4295 ?        00:00:00 Utility Process
+   4433 ?        00:00:07 Isolated Web Co
+   4531 ?        00:00:00 Isolated Web Co
+   4619 ?        00:00:00 RDD Process
+   4648 ?        00:00:00 Isolated Web Co
+   4715 ?        00:00:02 Isolated Web Co
+   4723 ?        00:00:00 Web Content
+   4783 ?        00:00:00 Web Content
+   4850 ?        00:00:00 Web Content
+   5213 ?        00:00:00 kworker/u32:0
+   5220 ?        00:00:00 kworker/9:0-cgwb_release
+   5254 ?        00:00:00 kworker/4:0
+   5269 ?        00:00:00 kworker/1:0-events
+   5363 pts/0    00:00:00 ps
+hwlab@hwl1-va50:~/sc3103/tcec$ man pwd
+hwlab@hwl1-va50:~/sc3103/tcec$ man date
+hwlab@hwl1-va50:~/sc3103/tcec$ man whoami
+hwlab@hwl1-va50:~/sc3103/tcec$ man date
+hwlab@hwl1-va50:~/sc3103/tcec$ help cd
+cd: cd [-L|[-P [-e]] [-@]] [dir]
+    Change the shell working directory.
+    
+    Change the current directory to DIR.  The default DIR is the value of the
+    HOME shell variable.
+    
+    The variable CDPATH defines the search path for the directory containing
+    DIR.  Alternative directory names in CDPATH are separated by a colon (:).
+    A null directory name is the same as the current directory.  If DIR begins
+    with a slash (/), then CDPATH is not used.
+    
+    If the directory is not found, and the shell option `cdable_vars' is set,
+    the word is assumed to be  a variable name.  If that variable has a value,
+    its value is used for DIR.
+    
+    Options:
+      -L	force symbolic links to be followed: resolve symbolic
+    		links in DIR after processing instances of `..'
+      -P	use the physical directory structure without following
+    		symbolic links: resolve symbolic links in DIR before
+    		processing instances of `..'
+      -e	if the -P option is supplied, and the current working
+    		directory cannot be determined successfully, exit with
+    		a non-zero status
+      -@	on systems that support it, present a file with extended
+    		attributes as a directory containing the file attributes
+    
+    The default is to follow symbolic links, as if `-L' were specified.
+    `..' is processed by removing the immediately previous pathname component
+    back to a slash or the beginning of DIR.
+    
+    Exit Status:
+    Returns 0 if the directory is changed, and if $PWD is set successfully when
+    -P is used; non-zero otherwise.
+hwlab@hwl1-va50:~/sc3103/tcec$ help man
+bash: help: no help topics match `man'.  Try `help help' or `man -k man' or `info man'.
+hwlab@hwl1-va50:~/sc3103/tcec$ help
+GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                      history [-c] [-d offset] [n] or history -anrw >
+ (( expression ))                                  if COMMANDS; then COMMANDS; [ elif COMMANDS; t>
+ . filename [arguments]                            jobs [-lnprs] [jobspec ...] or jobs -x command>
+ :                                                 kill [-s sigspec | -n signum | -sigspec] pid |>
+ [ arg... ]                                        let arg [arg ...]
+ [[ expression ]]                                  local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                    logout [n]
+ bg [job_spec ...]                                 mapfile [-d delim] [-n count] [-O origin] [-s >
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q >  popd [-n] [+N | -N]
+ break [n]                                         printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                 pushd [-n] [+N | -N | dir]
+ caller [expr]                                     pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS >  read [-ers] [-a array] [-d delim] [-i text] [->
+ cd [-L|[-P [-e]] [-@]] [dir]                      readarray [-d delim] [-n count] [-O origin] [->
+ command [-pVv] command [arg ...]                  readonly [-aAf] [name[=value] ...] or readonly>
+ compgen [-abcdefgjksuv] [-o option] [-A action]>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o optio>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]          set [-abefhkmnptuvxBCHP] [-o option-name] [--]>
+ continue [n]                                      shift [n]
+ coproc [NAME] command [redirections]              shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [-p] [name[=value] ...>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                            suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]         test [expr]
+ echo [-neE] [arg ...]                             time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]      times
+ eval [arg ...]                                    trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ...]] [>  true
+ exit [n]                                          type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p      typeset [-aAfFgiIlnrtux] [-p] name[=value] ...
+ false                                             ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [p>  umask [-p] [-S] [mode]
+ fg [job_spec]                                     unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done      unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done     until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMA>  variables - Names and meanings of some shell v>
+ getopts optstring name [arg ...]                  wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]         while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                         { COMMANDS ; }
+hwlab@hwl1-va50:~/sc3103/tcec$ which man
+/usr/bin/man
+hwlab@hwl1-va50:~/sc3103/tcec$ man ps
+hwlab@hwl1-va50:~/sc3103/tcec$ ps -help
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ ps -help
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ ps --help
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ man ps
+hwlab@hwl1-va50:~/sc3103/tcec$ man ps
+hwlab@hwl1-va50:~/sc3103/tcec$ ps -help
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ ps --help
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ ps --help all
+
+Usage:
+ ps [options]
+
+Basic options:
+ -A, -e               all processes
+ -a                   all with tty, except session leaders
+  a                   all with tty, including other users
+ -d                   all except session leaders
+ -N, --deselect       negate selection
+  r                   only running processes
+  T                   all processes on this terminal
+  x                   processes without controlling ttys
+
+Selection by list:
+ -C <command>         command name
+ -G, --Group <GID>    real group id or name
+ -g, --group <group>  session or effective group name
+ -p, p, --pid <PID>   process id
+        --ppid <PID>  parent process id
+ -q, q, --quick-pid <PID>
+                      process id (quick mode)
+ -s, --sid <session>  session id
+ -t, t, --tty <tty>   terminal
+ -u, U, --user <UID>  effective user id or name
+ -U, --User <UID>     real user id or name
+
+  The selection options take as their argument either:
+    a comma-separated list e.g. '-u root,nobody' or
+    a blank-separated list e.g. '-p 123 4567'
+
+Output formats:
+ -F                   extra full
+ -f                   full-format, including command lines
+  f, --forest         ascii art process tree
+ -H                   show process hierarchy
+ -j                   jobs format
+  j                   BSD job control format
+ -l                   long format
+  l                   BSD long format
+ -M, Z                add security data (for SELinux)
+ -O <format>          preloaded with default columns
+  O <format>          as -O, with BSD personality
+ -o, o, --format <format>
+                      user-defined format
+  s                   signal format
+  u                   user-oriented format
+  v                   virtual memory format
+  X                   register format
+ -y                   do not show flags, show rss vs. addr (used with -l)
+     --context        display security context (for SELinux)
+     --headers        repeat header lines, one per page
+     --no-headers     do not print header at all
+     --cols, --columns, --width <num>
+                      set screen width
+     --rows, --lines <num>
+                      set screen height
+
+Show threads:
+  H                   as if they were processes
+ -L                   possibly with LWP and NLWP columns
+ -m, m                after processes
+ -T                   possibly with SPID column
+
+Miscellaneous options:
+ -c                   show scheduling class with -l option
+  c                   show true command name
+  e                   show the environment after command
+  k,    --sort        specify sort order as: [+|-]key[,[+|-]key[,...]]
+  L                   show format specifiers
+  n                   display numeric uid and wchan
+  S,    --cumulative  include some dead child process data
+ -y                   do not show flags, show rss (only with -l)
+ -V, V, --version     display version information and exit
+ -w, w                unlimited output width
+
+        --help <simple|list|output|threads|misc|all>
+                      display help and exit
+
+For more details see ps(1).
+hwlab@hwl1-va50:~/sc3103/tcec$ ls
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -l
+total 0
+hwlab@hwl1-va50:~/sc3103/tcec$ file *
+*: cannot open `*' (No such file or directory)
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -al
+total 8
+drwxrwxr-x 2 hwlab hwlab 4096 Sep 20 14:09 .
+drwxrwxr-x 3 hwlab hwlab 4096 Sep 20 14:09 ..
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -al
+total 8
+drwxrwxr-x 2 hwlab hwlab 4096 Sep 20 14:09 .
+drwxrwxr-x 3 hwlab hwlab 4096 Sep 20 14:09 ..
+hwlab@hwl1-va50:~/sc3103/tcec$ cd ..
+hwlab@hwl1-va50:~/sc3103$ ls -a
+.  ..  tcec
+hwlab@hwl1-va50:~/sc3103$ cd ..
+hwlab@hwl1-va50:~$ ls -a
+.              .bashrc  Documents      .lesshst  .profile  .ssh                       Videos
+..             .cache   Downloads      .local    Public    .sudo_as_admin_successful
+.bash_history  .config  .fog_user.log  Music     sc3103    Templates
+.bash_logout   Desktop  .gnupg         Pictures  snap      test
+hwlab@hwl1-va50:~$ cd ..
+hwlab@hwl1-va50:/home$ ls -a
+.  ..  hwlab
+hwlab@hwl1-va50:/home$ cd ..
+hwlab@hwl1-va50:/$ cd ..
+hwlab@hwl1-va50:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+hwlab@hwl1-va50:/$ cd usr/
+hwlab@hwl1-va50:/usr$ ls -a
+.  ..  bin  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+hwlab@hwl1-va50:/usr$ cd ..
+hwlab@hwl1-va50:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+hwlab@hwl1-va50:/$ cd home/hwlab/
+.cache/    Desktop/   Downloads/ .local/    Pictures/  sc3103/    .ssh/      test/      
+.config/   Documents/ .gnupg/    Music/     Public/    snap/      Templates/ Videos/    
+hwlab@hwl1-va50:/$ cd home/hwlab/
+.cache/    Desktop/   Downloads/ .local/    Pictures/  sc3103/    .ssh/      test/      
+.config/   Documents/ .gnupg/    Music/     Public/    snap/      Templates/ Videos/    
+hwlab@hwl1-va50:/$ cd home/hwlab/
+.cache/    Desktop/   Downloads/ .local/    Pictures/  sc3103/    .ssh/      test/      
+.config/   Documents/ .gnupg/    Music/     Public/    snap/      Templates/ Videos/    
+hwlab@hwl1-va50:/$ cd home/hwlab/sc3103/tcec/
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..
+hwlab@hwl1-va50:~/sc3103/tcec$ touch scse
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..  scse
+hwlab@hwl1-va50:~/sc3103/tcec$ mv scse 
+mv: missing destination file operand after 'scse'
+Try 'mv --help' for more information.
+hwlab@hwl1-va50:~/sc3103/tcec$ mv --help
+Usage: mv [OPTION]... [-T] SOURCE DEST
+  or:  mv [OPTION]... SOURCE... DIRECTORY
+  or:  mv [OPTION]... -t DIRECTORY SOURCE...
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+  -f, --force                  do not prompt before overwriting
+  -i, --interactive            prompt before overwrite
+  -n, --no-clobber             do not overwrite an existing file
+If you specify more than one of -i, -f, -n, only the final one takes effect.
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  move all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 move only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -Z, --context                set SELinux security context of destination
+                                 file to default type
+      --help     display this help and exit
+      --version  output version information and exit
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/mv>
+or available locally via: info '(coreutils) mv invocation'
+hwlab@hwl1-va50:~/sc3103/tcec$ mv scse -t=sc3103
+mv: failed to access '=sc3103': No such file or directory
+hwlab@hwl1-va50:~/sc3103/tcec$ mv scse -tsc3103
+mv: failed to access 'sc3103': No such file or directory
+hwlab@hwl1-va50:~/sc3103/tcec$ mv scse -t..
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..
+hwlab@hwl1-va50:~/sc3103/tcec$ cd ..
+hwlab@hwl1-va50:~/sc3103$ ls -a
+.  ..  scse  tcec
+hwlab@hwl1-va50:~/sc3103$ mv 
+scse  tcec/ 
+hwlab@hwl1-va50:~/sc3103$ mv scse -t tcec
+hwlab@hwl1-va50:~/sc3103$ ls -a
+.  ..  tcec
+hwlab@hwl1-va50:~/sc3103$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'
+hwlab@hwl1-va50:~/sc3103$ ls
+tcec
+hwlab@hwl1-va50:~/sc3103$ ls -a
+.  ..  tcec
+hwlab@hwl1-va50:~/sc3103$ mkdir temp
+hwlab@hwl1-va50:~/sc3103$ ls -a
+.  ..  tcec  temp
+hwlab@hwl1-va50:~/sc3103$ cd tcec/
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..  scse
+hwlab@hwl1-va50:~/sc3103/tcec$ cp scse -t ../temp/
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -a
+.  ..  scse
+hwlab@hwl1-va50:~/sc3103/tcec$ cp scse -t ../temp/
+hwlab@hwl1-va50:~/sc3103/tcec$ ^C
+hwlab@hwl1-va50:~/sc3103/tcec$ echo "hello"
+hello
+hwlab@hwl1-va50:~/sc3103/tcec$ echo "hello" > hello.txt
+hwlab@hwl1-va50:~/sc3103/tcec$ cat hello.txt
+hello
+hwlab@hwl1-va50:~/sc3103/tcec$ echo "world" > hello.txt
+hwlab@hwl1-va50:~/sc3103/tcec$ cat hello.txt
+world
+hwlab@hwl1-va50:~/sc3103/tcec$ cat --help
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+  -A, --show-all           equivalent to -vET
+  -b, --number-nonblank    number nonempty output lines, overrides -n
+  -e                       equivalent to -vE
+  -E, --show-ends          display $ at end of each line
+  -n, --number             number all output lines
+  -s, --squeeze-blank      suppress repeated empty output lines
+  -t                       equivalent to -vT
+  -T, --show-tabs          display TAB characters as ^I
+  -u                       (ignored)
+  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      --help     display this help and exit
+      --version  output version information and exit
+
+Examples:
+  cat f - g  Output f's contents, then standard input, then g's contents.
+  cat        Copy standard input to standard output.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/cat>
+or available locally via: info '(coreutils) cat invocation'
+hwlab@hwl1-va50:~/sc3103/tcec$ echo "hello" > hello.txt
+hwlab@hwl1-va50:~/sc3103/tcec$ cat hello.txt 
+hello
+hwlab@hwl1-va50:~/sc3103/tcec$ echo "world" >> hello.txt
+hwlab@hwl1-va50:~/sc3103/tcec$ cat hello.txt 
+hello
+world
+hwlab@hwl1-va50:~/sc3103/tcec$ cat scse
+testing123
+
+hwlab@hwl1-va50:~/sc3103/tcec$ less hello.txt 
+hwlab@hwl1-va50:~/sc3103/tcec$ more hello.txt 
+hello
+world
+hwlab@hwl1-va50:~/sc3103/tcec$ grep "hello" hello.txt 
+hello
+hwlab@hwl1-va50:~/sc3103/tcec$ grep "hell" hello.txt 
+hello
+hwlab@hwl1-va50:~/sc3103/tcec$ grep "m" hello.txt 
+hwlab@hwl1-va50:~/sc3103/tcec$ grep "l" hello.txt 
+hello
+world
+hwlab@hwl1-va50:~/sc3103/tcec$ ls
+hello.txt  scse
+hwlab@hwl1-va50:~/sc3103/tcec$ mkdir work
+hwlab@hwl1-va50:~/sc3103/tcec$ bash myscript.sh 
+one
+hello world
+two
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -l m*
+-rw-rw-r-- 1 hwlab hwlab 74 Sep 20 14:36 myscript.sh
+hwlab@hwl1-va50:~/sc3103/tcec$ touch sss
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -l s*
+-rw-rw-r-- 1 hwlab hwlab 12 Sep 20 14:26 scse
+-rw-rw-r-- 1 hwlab hwlab  0 Sep 20 14:39 sss
+hwlab@hwl1-va50:~/sc3103/tcec$ chmod ugo+rwx myscript.sh
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -l m*
+-rwxrwxrwx 1 hwlab hwlab 74 Sep 20 14:36 myscript.sh
+hwlab@hwl1-va50:~/sc3103/tcec$ ./
+myscript.sh  work/        
+hwlab@hwl1-va50:~/sc3103/tcec$ ./myscript.sh
+one
+hello world
+two
+hwlab@hwl1-va50:~/sc3103/tcec$ nano
+hwlab@hwl1-va50:~/sc3103/tcec$ ./myscript.sh
+one
+hello world
+two
+hwlab@hwl1-va50:~/sc3103/tcec$ gcc -0 myprog mprog.c
+gcc: error: unrecognized command-line option ‘-0’
+hwlab@hwl1-va50:~/sc3103/tcec$ gcc -o myprog mprog.c
+cc1: fatal error: mprog.c: No such file or directory
+compilation terminated.
+hwlab@hwl1-va50:~/sc3103/tcec$ gcc -o myprog myprog.c
+myprog.c:1:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+    1 | include <stdio.h>
+      |         ^
+hwlab@hwl1-va50:~/sc3103/tcec$ ^C
+hwlab@hwl1-va50:~/sc3103/tcec$ gcc -o myprog myprog.c
+myprog.c:1:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+    1 | include <stdio.h>
+      |         ^
+hwlab@hwl1-va50:~/sc3103/tcec$ gcc -o myprog myprog.c
+hwlab@hwl1-va50:~/sc3103/tcec$ ./myprog
+2
+2
+9
+9
+b
+b
+c
+c
+a
+a
+-1
+-1
+4
+4
+^C
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -al
+total 48
+drwxrwxr-x 3 hwlab hwlab  4096 Sep 20 14:49 .
+drwxrwxr-x 4 hwlab hwlab  4096 Sep 20 14:25 ..
+-rw-rw-r-- 1 hwlab hwlab    12 Sep 20 14:29 hello.txt
+-rwxrwxr-x 1 hwlab hwlab 16088 Sep 20 14:49 myprog
+-rw-rw-r-- 1 hwlab hwlab   133 Sep 20 14:49 myprog.c
+-rw-rw-r-- 1 hwlab hwlab  1024 Sep 20 14:49 .myprog.c.swp
+-rwxrwxrwx 1 hwlab hwlab    74 Sep 20 14:36 myscript.sh
+-rw-rw-r-- 1 hwlab hwlab    12 Sep 20 14:26 scse
+-rw-rw-r-- 1 hwlab hwlab     0 Sep 20 14:39 sss
+drwxrwxr-x 2 hwlab hwlab  4096 Sep 20 14:33 work
+hwlab@hwl1-va50:~/sc3103/tcec$ ls -l m*
+-rwxrwxr-x 1 hwlab hwlab 16088 Sep 20 14:49 myprog
+-rw-rw-r-- 1 hwlab hwlab   133 Sep 20 14:49 myprog.c
+-rwxrwxrwx 1 hwlab hwlab    74 Sep 20 14:36 myscript.sh
+hwlab@hwl1-va50:~/sc3103/tcec$ stat myprog
+  File: myprog
+  Size: 16088     	Blocks: 32         IO Block: 4096   regular file
+Device: 812h/2066d	Inode: 1049141     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/   hwlab)   Gid: ( 1000/   hwlab)
+Access: 2024-09-20 14:49:48.569165586 +0800
+Modify: 2024-09-20 14:49:41.443212428 +0800
+Change: 2024-09-20 14:49:41.443212428 +0800
+ Birth: 2024-09-20 14:49:41.425212547 +0800
+hwlab@hwl1-va50:~/sc3103/tcec$ 
+

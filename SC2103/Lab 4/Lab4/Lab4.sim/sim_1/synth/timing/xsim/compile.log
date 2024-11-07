@@ -1,0 +1,71 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/Lab4.sim/sim_1/synth/timing/xsim/uP16_top_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module BRAM_SINGLE_MACRO_viv_
+INFO: [VRFC 10-311] analyzing module BRAM_SINGLE_MACRO__parameterized0
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-311] analyzing module D_mem
+INFO: [VRFC 10-311] analyzing module EX_Mem_PR
+INFO: [VRFC 10-311] analyzing module EX_stage
+INFO: [VRFC 10-311] analyzing module ID_EX_PR
+INFO: [VRFC 10-311] analyzing module ID_stage
+INFO: [VRFC 10-311] analyzing module IF_ID_PR
+INFO: [VRFC 10-311] analyzing module IF_stage
+INFO: [VRFC 10-311] analyzing module I_mem
+INFO: [VRFC 10-311] analyzing module Mem_stage
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-311] analyzing module uP16_BASYS3_top
+INFO: [VRFC 10-311] analyzing module uP16_top
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/Data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_mem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'D_mem' [F:/SC2103/Lab 4/Lab4/uP_src/Data_mem.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/EX_Mem_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem_PR
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'EX_Mem_PR' [F:/SC2103/Lab 4/Lab4/uP_src/EX_Mem_PR.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/EX_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_stage
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'EX_stage' [F:/SC2103/Lab 4/Lab4/uP_src/EX_stage.v:24]
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU' [F:/SC2103/Lab 4/Lab4/uP_src/EX_stage.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/ID_EX_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_PR
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ID_EX_PR' [F:/SC2103/Lab 4/Lab4/uP_src/ID_EX_PR.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/ID_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_stage
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ID_stage' [F:/SC2103/Lab 4/Lab4/uP_src/ID_stage.v:24]
+INFO: [VRFC 10-311] analyzing module Reg_File
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Reg_File' [F:/SC2103/Lab 4/Lab4/uP_src/ID_stage.v:90]
+INFO: [VRFC 10-311] analyzing module Control
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Control' [F:/SC2103/Lab 4/Lab4/uP_src/ID_stage.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/IF_ID_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_PR
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IF_ID_PR' [F:/SC2103/Lab 4/Lab4/uP_src/IF_ID_PR.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/IF_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_stage
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IF_stage' [F:/SC2103/Lab 4/Lab4/uP_src/IF_stage.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/Instruct_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I_mem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'I_mem' [F:/SC2103/Lab 4/Lab4/uP_src/Instruct_mem.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/Mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_stage
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Mem_stage' [F:/SC2103/Lab 4/Lab4/uP_src/Mem_stage.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uP16_top
+INFO: [VRFC 10-2458] undeclared symbol ID_sel_PC, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:55]
+INFO: [VRFC 10-2458] undeclared symbol EX_RFwriteEnab_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:78]
+INFO: [VRFC 10-2458] undeclared symbol ID_memWriteEnab, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:91]
+INFO: [VRFC 10-2458] undeclared symbol ID_memEnab, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:92]
+INFO: [VRFC 10-2458] undeclared symbol ID_sel_mem2RF, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:93]
+INFO: [VRFC 10-2458] undeclared symbol ID_sel_ALUsrc1, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:94]
+INFO: [VRFC 10-2458] undeclared symbol ID_RFwriteEnab, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:96]
+INFO: [VRFC 10-2458] undeclared symbol ID_memWriteEnab_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:120]
+INFO: [VRFC 10-2458] undeclared symbol ID_memEnab_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:121]
+INFO: [VRFC 10-2458] undeclared symbol ID_sel_mem2RF_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:122]
+INFO: [VRFC 10-2458] undeclared symbol ID_sel_ALUsrc1_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:123]
+INFO: [VRFC 10-2458] undeclared symbol ID_RFwriteEnab_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:125]
+INFO: [VRFC 10-2458] undeclared symbol EX_sel_mem2Reg_d, assumed default net type wire [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:153]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'uP16_top' [F:/SC2103/Lab 4/Lab4/uP_src/uP16_top.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 4/uP16_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uP16_top_tb

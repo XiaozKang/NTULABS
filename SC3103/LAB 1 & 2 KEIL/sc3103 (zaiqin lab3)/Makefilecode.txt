@@ -1,0 +1,18 @@
+﻿hello: hello-funct1.o hello-main.o
+        gcc -o hello hello-funct1.o hello-main.o
+
+hello-funct1.o: hello-funct1.c hello.h
+        gcc -c hello-funct1.c
+
+hello-main.o: hello-main.c hello.h
+        gcc.c hello-main.c
+
+clean:
+        rm -f hello hello-funct1.o hello-main.o
+
+
+
+
+hello: hello-funct1.c hello-main.c
+        gcc -o hello hello-funct1.c hello-main.c
+

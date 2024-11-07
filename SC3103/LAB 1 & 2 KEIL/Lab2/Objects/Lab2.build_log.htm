@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: SCSE Hardware 1, NTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\lowz0021\Desktop\SC3103\Lab2\Lab2.uvproj
+Project File Date:  09/17/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Lab2'
+compiling main.c...
+..\Hardware\buzzer.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Hardware\play_button.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Hardware\uart.h(26): warning:  #1295-D: Deprecated declaration uart_task - give arg types
+  void uart_task();
+..\Hardware\uart.h(28): warning:  #1295-D: Deprecated declaration USART3_IRQHandler - give arg types
+  int USART3_IRQHandler();
+..\Hardware\uart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(42): warning:  #167-D: argument of type "void (*)(void *)" is incompatible with parameter of type "TimerCallbackFunction_t"
+  	xAutoTimer1 = xTimerCreate("timer1", 
+dTRUE, 0 , led_task);
+main.c(63): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 7 warnings, 0 errors
+compiling play_button.c...
+..\Hardware\play_button.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Hardware\play_button.c(107): warning:  #223-D: function "BUZZER_Init" declared implicitly
+  	  BUZZER_Init();
+..\Hardware\play_button.c(120): warning:  #1-D: last line of file ends without a newline
+  }  
+..\Hardware\play_button.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=9966 RO-data=3194 RW-data=272 ZI-data=23984  
+FromELF: creating hex file...
+".\Objects\Lab2.axf" - 0 Error(s), 10 Warning(s).
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

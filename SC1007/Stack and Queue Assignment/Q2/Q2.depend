@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1675790346 source:e:\sc1007\stack and queue assignment\q2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+
