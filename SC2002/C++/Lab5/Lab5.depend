@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1698770314 source:e:\sc2002\c++\lab5\src\animal.cpp
+	"animal.h"
+	"string"
+	<iostream>
+
+1698769200 e:\sc2002\c++\lab5\include\animal.h
+	<iostream>
+	<string>
+
+1698770202 source:e:\sc2002\c++\lab5\src\childanimal.cpp
+	"childAnimal.h"
+
+1698769438 e:\sc2002\c++\lab5\include\childanimal.h
+	"animal.h"
+
+1698765984 source:e:\sc2002\c++\lab5\main.cpp
+	<iostream>
+	<string>
+	"animal.h"
+	"childAnimal.h"
+

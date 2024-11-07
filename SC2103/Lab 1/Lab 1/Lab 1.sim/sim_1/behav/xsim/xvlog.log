@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 1/Lab 1/Lab 1.srcs/sources_1/new/lab_FSM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SC2103/Lab 1/Lab 1/Lab 1.srcs/sim_1/new/lab_FSM1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_FSM1_tb
+INFO: [VRFC 10-2458] undeclared symbol insert_coin, assumed default net type wire [F:/SC2103/Lab 1/Lab 1/Lab 1.srcs/sim_1/new/lab_FSM1_tb.v:27]
+INFO: [VRFC 10-2458] undeclared symbol money_return, assumed default net type wire [F:/SC2103/Lab 1/Lab 1/Lab 1.srcs/sim_1/new/lab_FSM1_tb.v:27]
+INFO: [VRFC 10-2458] undeclared symbol dispense, assumed default net type wire [F:/SC2103/Lab 1/Lab 1/Lab 1.srcs/sim_1/new/lab_FSM1_tb.v:27]

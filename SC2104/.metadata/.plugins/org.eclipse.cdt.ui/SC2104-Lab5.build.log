@@ -1,0 +1,370 @@
+10:22:17 **** Incremental Build of configuration Debug for project SC2104-Lab5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'OLED_disp_msg1':
+../Core/Src/main.c:122:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  122 |   OLED_ShowString(10, 5, "SC2104/CE3002"); // show message on OLED display at line 5)
+      |                          ^~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:124:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  124 |   OLED_ShowString(10,30, buf); //another message at line 30
+      |                          ^~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:126:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  126 |   OLED_ShowString(10,50, buf); //another message at line 50
+      |                          ^~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:132:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  132 |   HAL_UART_Transmit(&huart3, buf, 8, HAL_MAX_DELAY); // Send through Serial Port @115200
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:133:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  133 |   HAL_UART_Transmit(&huart2, buf, 8, HAL_MAX_DELAY); // Send through BT Serial Port @9600
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'OLED_disp_msg2':
+../Core/Src/main.c:139:27: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  139 |   OLED_ShowString(30, 20, "Testing"); // show message on OLED display at line 20)
+      |                           ^~~~~~~~~
+      |                           |
+      |                           char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:140:27: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  140 |   OLED_ShowString(10, 30, " Server motors"); // show message on OLED display at line 40)
+      |                           ^~~~~~~~~~~~~~~~
+      |                           |
+      |                           char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:142:3: warning: implicit declaration of function 'Server_Motor12' [-Wimplicit-function-declaration]
+  142 |   Server_Motor12(); // testing servermotor 1 and 2
+      |   ^~~~~~~~~~~~~~
+../Core/Src/main.c:146:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  146 |   OLED_ShowString(0, 0,  "Adjust Platform"); // show message on OLED display at line 30)
+      |                          ^~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:147:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  147 |   OLED_ShowString(0, 10, "    for"); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:148:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  148 |   OLED_ShowString(0, 20, "level setting"); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:154:4: warning: implicit declaration of function 'get_angles' [-Wimplicit-function-declaration]
+  154 |    get_angles();
+      |    ^~~~~~~~~~
+../Core/Src/main.c:156:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  156 |    sprintf(temp[9], "P:%4.1f ", pitch_acc);
+      |    ^~~~~~~
+../Core/Src/main.c:156:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include <math.h>
+  +++ |+#include <stdio.h>
+   27 | /* USER CODE END Includes */
+../Core/Src/main.c:157:27: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  157 |    OLED_ShowString(0, 40, &temp[9]);  // show on OLED
+      |                           ^~~~~~~~
+      |                           |
+      |                           char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:159:28: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |    OLED_ShowString(70, 40, &temp[9]); // shown on OLED
+      |                            ^~~~~~~~
+      |                            |
+      |                            char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:166:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  166 |   OLED_ShowString(0, 10, "Targets setting"); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:167:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  167 |   OLED_ShowString(0, 20, "  procedure"); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:168:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  168 |   OLED_ShowString(0, 35, "   starts"); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:169:26: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  169 |   OLED_ShowString(0, 50, "..Keep still.."); // show message on OLED display at line 40)
+      |                          ^~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:173:3: warning: implicit declaration of function 'set_targets' [-Wimplicit-function-declaration]
+  173 |   set_targets(); //set the target  angles for the balance platform
+      |   ^~~~~~~~~~~
+../Core/Src/main.c: In function 'OLED_disp_msg3':
+../Core/Src/main.c:182:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+  182 |    sprintf(temp[9], "P:%4.1f ", pitch_acc);
+      |    ^~~~~~~
+../Core/Src/main.c:182:4: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:183:27: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  183 |    OLED_ShowString(0, 40, &temp[9]);  // show on OLED
+      |                           ^~~~~~~~
+      |                           |
+      |                           char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:185:28: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  185 |    OLED_ShowString(70, 40, &temp[9]); // shown on OLED
+      |                            ^~~~~~~~
+      |                            |
+      |                            char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:188:27: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  188 |    OLED_ShowString(0, 50, &temp[9]);  // show on OLED
+      |                           ^~~~~~~~
+      |                           |
+      |                           char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:190:28: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  190 |    OLED_ShowString(70, 50, &temp[9]); // shown on OLED
+      |                            ^~~~~~~~
+      |                            |
+      |                            char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:193:26: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  193 |    OLED_ShowString(0, 0, &temp[9]); // shown on OLED
+      |                          ^~~~~~~~
+      |                          |
+      |                          char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c: In function 'Serial_tx':
+../Core/Src/main.c:203:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+  203 |    sprintf(sbuf[0], "%7.2f,", roll_KF); //
+      |    ^~~~~~~
+../Core/Src/main.c:203:4: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:208:37: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  208 |      HAL_UART_Transmit(&huart3, sbuf[i], 8, HAL_MAX_DELAY); // send through serial port at 115200
+      |                                 ~~~~^~~
+      |                                     |
+      |                                     char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:214:6: warning: conflicting types for 'Server_Motor12'
+  214 | void Server_Motor12(){
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:142:3: note: previous implicit declaration of 'Server_Motor12' was here
+  142 |   Server_Motor12(); // testing servermotor 1 and 2
+      |   ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'mov_avr_pitch':
+../Core/Src/main.c:263:11: warning: unused variable 'buff' [-Wunused-variable]
+  263 |     char *buff;
+      |           ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:300:6: warning: conflicting types for 'set_targets'
+  300 | void set_targets()  // use the average of 500 samples to set the platform target angles
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:173:3: note: previous implicit declaration of 'set_targets' was here
+  173 |   set_targets(); //set the target  angles for the balance platform
+      |   ^~~~~~~~~~~
+../Core/Src/main.c:322:6: warning: conflicting types for 'get_angles'
+  322 | void get_angles()  //Calaculate pitch and toll angles using Kalman Filter
+      |      ^~~~~~~~~~
+../Core/Src/main.c:154:4: note: previous implicit declaration of 'get_angles' was here
+  154 |    get_angles();
+      |    ^~~~~~~~~~
+../Core/Src/main.c: In function 'get_angles':
+../Core/Src/main.c:324:4: warning: implicit declaration of function 'IMU_AccelRead' [-Wimplicit-function-declaration]
+  324 |    IMU_AccelRead(&imu); // read Accelerometer value
+      |    ^~~~~~~~~~~~~
+../Core/Src/main.c:325:4: warning: implicit declaration of function 'IMU_GyroRead' [-Wimplicit-function-declaration]
+  325 |    IMU_GyroRead(&imu); //  read Gyroscope value
+      |    ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'roll_PID':
+../Core/Src/main.c:399:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+  399 |  sprintf(temp[9], "rS:%3d", roll_ServoVal);  // show Servo PWM value on OLED display
+      |  ^~~~~~~
+../Core/Src/main.c:399:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:400:26: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  400 |  OLED_ShowString(70, 20, &temp[9]);
+      |                          ^~~~~~~~
+      |                          |
+      |                          char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c: In function 'pitch_PID':
+../Core/Src/main.c:432:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  432 |     if (pitch_ServoVal < ServoMin)  // Clamp the PWM value to minimum value
+      |     ^~
+../Core/Src/main.c:435:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  435 |  htim12.Instance->CCR2 = pitch_ServoVal;  // send duty cycle to Pitch servo motor
+      |  ^~~~~~
+../Core/Src/main.c:437:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+  437 |  sprintf(temp[9], "pS:%3d", pitch_ServoVal);  // show Servo PWM value on OLED display
+      |  ^~~~~~~
+../Core/Src/main.c:437:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:438:25: warning: passing argument 3 of 'OLED_ShowString' from incompatible pointer type [-Wincompatible-pointer-types]
+  438 |  OLED_ShowString(0, 20, &temp[9]);
+      |                         ^~~~~~~~
+      |                         |
+      |                         char (*)[10]
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[10]'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:491:14: warning: implicit declaration of function 'IMU_Initialise' [-Wimplicit-function-declaration]
+  491 |      int i = IMU_Initialise(&imu, &hi2c2, &huart3);
+      |              ^~~~~~~~~~~~~~
+../Core/Src/main.c:496:33: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  496 |      HAL_UART_Transmit(&huart3, msg, 16, HAL_MAX_DELAY);  // send message to serial port
+      |                                 ^~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:541:29: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  541 |      OLED_ShowString(0, 10, "Program Stop"); // show message on OLED display at line 10)
+      |                             ^~~~~~~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:542:29: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  542 |      OLED_ShowString(0, 30, "Press Reset");  // show message on OLED display at line 30)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:543:29: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  543 |      OLED_ShowString(0, 40, "button to");    // show message on OLED display at line 40)
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:544:29: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+  544 |      OLED_ShowString(0, 50, "restart");      // show message on OLED display at line 50)
+      |                             ^~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/oled.h:56:57: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   56 | void OLED_ShowString(uint8_t x,uint8_t y,const uint8_t *p);
+      |                                          ~~~~~~~~~~~~~~~^
+arm-none-eabi-gcc -o "SC2104-Lab5.elf" @"objects.list"   -mcpu=cortex-m4 -T"G:\SC2104\SC2104-Lab5\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SC2104-Lab5.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SC2104-Lab5.elf
+ 
+arm-none-eabi-size   SC2104-Lab5.elf 
+arm-none-eabi-objdump -h -S  SC2104-Lab5.elf  > "SC2104-Lab5.list"
+   text	   data	    bss	    dec	    hex	filename
+  50468	    512	   3888	  54868	   d654	SC2104-Lab5.elf
+Finished building: default.size.stdout
+ 
+Finished building: SC2104-Lab5.list
+ 
+
+10:22:19 Build Finished. 0 errors, 46 warnings. (took 1s.879ms)
+
