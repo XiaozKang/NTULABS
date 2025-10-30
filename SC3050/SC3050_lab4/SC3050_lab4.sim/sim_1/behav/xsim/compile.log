@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/EXE_MEMstage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_MEM_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/ID_EXEstage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EXE_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/IF_IDstage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/MEM_WBstage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/dmemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/imemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/pipelined_regfile_5stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelined_regfile_5stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab4_codes/test_bench_5_stage_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bench_5_stage_pipeline

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab2_codes/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab2_codes/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab2_codes/datapath_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/Lab2_codes/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TO0009NG/SC3050/SC3050_lab2/SC3050_lab2.srcs/sim_1/new/datapath_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath_test

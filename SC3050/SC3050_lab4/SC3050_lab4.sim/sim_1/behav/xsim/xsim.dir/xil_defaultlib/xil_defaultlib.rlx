@@ -1,0 +1,18 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/TO0009NG/SC3050/Lab4_codes/EXE_MEMstage.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/ID_EXEstage.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,EXE_MEM_stage,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/ID_EXEstage.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/IF_IDstage.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,ID_EXE_stage,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/IF_IDstage.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/MEM_WBstage.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,IF_ID_stage,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/MEM_WBstage.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/PC.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,MEM_WB_stage,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/PC.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/alu.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,PC1,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/alu.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/control.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,alu,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/control.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/dmemory.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,control,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,1760494652,verilog,,,,,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/dmemory.v,1760619593,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/imemory.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,dmemory,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/imemory.v,1760619176,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/pipelined_regfile_5stage.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,imemory,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/pipelined_regfile_5stage.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/regfile.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,pipelined_regfile_5stage,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/regfile.v,1760494652,verilog,,C:/Users/TO0009NG/SC3050/Lab4_codes/test_bench_5_stage_pipeline.v,C:/Users/TO0009NG/SC3050/Lab4_codes/define.v,regfile,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab4_codes/test_bench_5_stage_pipeline.v,1760605797,verilog,,,,test_bench_5_stage_pipeline,,,,,,,,
+C:/Users/TO0009NG/SC3050/SC3050_lab4/SC3050_lab4.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

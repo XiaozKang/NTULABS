@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/TO0009NG/Lab1_codes/adder.v,1756631832,verilog,,C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/adder_test.v,,adder,,,,,,,,
+C:/Users/TO0009NG/Lab1_codes/alu.v,1756634889,verilog,,C:/Users/TO0009NG/Lab1_codes/alutest.v,C:/Users/TO0009NG/Lab1_codes/define.v,alu,,,,,,,,
+C:/Users/TO0009NG/Lab1_codes/alutest.v,1756636144,verilog,,,C:/Users/TO0009NG/Lab1_codes/define.v,alu_tb_file_io,,,,,,,,
+C:/Users/TO0009NG/Lab1_codes/define.v,1756636154,verilog,,,,,,,,,,,,
+C:/Users/TO0009NG/Lab1_codes/multiplier.v,1756632650,verilog,,C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/multiplier_test.v,,multiplier,,,,,,,,
+C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/adder_test.v,1756630095,verilog,,,,adder_test,,,,,,,,
+C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/multiplier_test.v,1756632920,verilog,,,,multiplier_test,,,,,,,,

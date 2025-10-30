@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Aug 31 16:34:40 2025
+# Process ID: 18616
+# Current directory: C:/Users/TO0009NG/SC3050_lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20264 C:\Users\TO0009NG\SC3050_lab1\SC3050_lab1.xpr
+# Log file: C:/Users/TO0009NG/SC3050_lab1/vivado.log
+# Journal file: C:/Users/TO0009NG/SC3050_lab1\vivado.jou
+# Running On: HZ-009, OS: Windows, CPU Frequency: 1995 MHz, CPU Physical cores: 6, Host memory: 17178 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+file mkdir C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/adder_test.v w ]
+add_files -fileset sim_1 C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/adder_test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top adder_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source adder_test.tcl
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source adder_test.tcl
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing -max_paths 1 -delay_type max
+close_sim
+launch_simulation
+source adder_test.tcl
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source adder_test.tcl
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing -max_paths 1 -delay_type max
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top multiplier [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/multiplier_test.v w ]
+add_files -fileset sim_1 C:/Users/TO0009NG/SC3050_lab1/SC3050_lab1.srcs/sim_1/new/multiplier_test.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top multiplier_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source multiplier_test.tcl
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing -max_paths 1 -delay_type max
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing -max_paths 1 -delay_type max
+close_sim

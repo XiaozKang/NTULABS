@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/EXE_WBstage.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/ID_EXEstage.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/PC.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/alu.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/control.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/imemory.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/pipelined_regfile_4stage.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/regfile.v" \
+"../../../../../Lab3_codes/Lab3_Part1_4_stage_pipeline/test_bench_4_stage_pipeline.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,29 @@
+# Command to find maximum combinational path delay
+report_timing -max_paths 1 -delay_type max
+
+# Command to find Minimum Clock Period = Actual Period - Worst Negative Slack(WNS) = 10ns - WNS
+create_clock -period 10.0 -name sys_clk [get_ports clk]
+report_timing_summary
+
+# To print out all the object paths under the test, change the test and instantiation name accordingly
+get_objects /test_bench_4_stage_pipeline/uut/RF0/*
+
+# Print the contents of "regdata" for 4 stage pipeline
+set NREG 32
+
+set scope_path "/test_bench_4_stage_pipeline/uut/RF0"
+
+for {set i 0} {$i < $NREG} {incr i} {
+	set reg_value [get_value ${scope_path}/regdata[$i]]
+	puts "regdata[$i] = $reg_value"
+}
+
+# Print the contents of "dmemory" for 5 stage pipeline
+set NREG 64
+
+set scope_path "/test_bench_5_stage_pipeline/uut/dm"
+
+for {set i 0} {$i < $NREG} {incr i} {
+	set dm_value [get_value ${scope_path}/dmemory[$i]]
+	puts "dmemory[$i] = $dm_value"
+}

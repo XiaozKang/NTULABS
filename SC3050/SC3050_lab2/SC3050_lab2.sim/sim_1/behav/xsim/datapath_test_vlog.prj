@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Lab2_codes/alu.v" \
+"../../../../../Lab2_codes/control.v" \
+"../../../../../Lab2_codes/datapath_single.v" \
+"../../../../../Lab2_codes/regfile.v" \
+"../../../../SC3050_lab2.srcs/sim_1/new/datapath_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

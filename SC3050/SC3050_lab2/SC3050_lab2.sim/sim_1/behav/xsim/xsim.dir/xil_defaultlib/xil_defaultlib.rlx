@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/TO0009NG/SC3050/Lab2_codes/alu.v,1733033856,verilog,,C:/Users/TO0009NG/SC3050/Lab2_codes/control.v,C:/Users/TO0009NG/SC3050/Lab2_codes/define.v,alu,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab2_codes/control.v,1733033856,verilog,,C:/Users/TO0009NG/SC3050/Lab2_codes/datapath_single.v,C:/Users/TO0009NG/SC3050/Lab2_codes/define.v,control,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab2_codes/datapath_single.v,1757429736,verilog,,C:/Users/TO0009NG/SC3050/Lab2_codes/regfile.v,C:/Users/TO0009NG/SC3050/Lab2_codes/define.v,datapath_mux,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab2_codes/define.v,1757428616,verilog,,,,,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab2_codes/regfile.v,1733033856,verilog,,C:/Users/TO0009NG/SC3050/SC3050_lab2/SC3050_lab2.srcs/sim_1/new/datapath_test.v,C:/Users/TO0009NG/SC3050/Lab2_codes/define.v,regfile,,,,,,,,
+C:/Users/TO0009NG/SC3050/Lab2_codes/regfiletest.v,1733033856,verilog,,,,regfiletest,,,,,,,,
+C:/Users/TO0009NG/SC3050/SC3050_lab2/SC3050_lab2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/TO0009NG/SC3050/SC3050_lab2/SC3050_lab2.srcs/sim_1/new/datapath_test.v,1757432822,verilog,,,,datapath_test,,,,,,,,

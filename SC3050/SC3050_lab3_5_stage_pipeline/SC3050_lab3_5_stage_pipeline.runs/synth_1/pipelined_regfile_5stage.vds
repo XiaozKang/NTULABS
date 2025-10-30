@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 16 17:00:10 2025
+# Process ID: 3096
+# Current directory: C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.runs/synth_1
+# Command line: vivado.exe -log pipelined_regfile_5stage.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipelined_regfile_5stage.tcl
+# Log file: C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.runs/synth_1/pipelined_regfile_5stage.vds
+# Journal file: C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.runs/synth_1\vivado.jou
+# Running On: HZ-002, OS: Windows, CPU Frequency: 1995 MHz, CPU Physical cores: 6, Host memory: 17178 MB
+#-----------------------------------------------------------
+source pipelined_regfile_5stage.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 400.129 ; gain = 63.418
+Command: read_checkpoint -auto_incremental -incremental C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.srcs/utils_1/imports/synth_1/pipelined_regfile_5stage.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.srcs/utils_1/imports/synth_1/pipelined_regfile_5stage.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top pipelined_regfile_5stage -part xc7s50csga324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15776
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'writeenable_MEM_WB', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:61]
+INFO: [Synth 8-11241] undeclared symbol 'memwrite_ID_EXE', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'memtoreg_ID_EXE', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'writeenable_ID_EXE', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'memwrite_EXE_MEM', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:77]
+INFO: [Synth 8-11241] undeclared symbol 'memtoreg_EXE_MEM', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:77]
+INFO: [Synth 8-11241] undeclared symbol 'writeenable_EXE_MEM', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:77]
+INFO: [Synth 8-11241] undeclared symbol 'memtoreg_MEM_WB', assumed default net type 'wire' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:84]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 840.984 ; gain = 409.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pipelined_regfile_5stage' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PC1' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/PC.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PC1' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/PC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'imemory' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/imemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'imem_test0.mem' is read successfully [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/imemory.v:30]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/imemory.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'imemory' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/imemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/control.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/control.v:5]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/regfile.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/regfile.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ID_EXE_stage' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/ID_EXEstage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EXE_stage' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/ID_EXEstage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/alu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/alu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'EXE_MEM_stage' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/EXE_MEMstage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_MEM_stage' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/EXE_MEMstage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dmemory' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/dmemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'dmem_test0.mem' is read successfully [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/dmemory.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/dmemory.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'dmemory' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/dmemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_stage' [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/MEM_WBstage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_stage' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/MEM_WBstage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pipelined_regfile_5stage' (0#1) [C:/Users/TO0009NG/SC3050/Lab3_codes/Lab3_Part2_5_stage_pipeline/pipelined_regfile_5stage.v:4]
+WARNING: [Synth 8-7129] Port fileid in module dmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[63] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[62] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[61] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[60] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[59] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[58] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[57] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[56] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[55] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[54] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[53] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[52] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[51] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[50] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[49] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[48] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[47] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[46] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[45] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[44] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[43] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[42] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[41] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[40] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[39] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[38] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[37] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[36] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[35] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[34] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[33] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[32] in module imemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fileid in module imemory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.srcs/utils_1/imports/synth_1/pipelined_regfile_5stage.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 936.027 ; gain = 504.609
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   64 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 39    
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	              64K Bit	(1024 X 64 bit)          RAMs := 1     
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 5     
+	   7 Input   64 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 36    
+	   8 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------------------+----------------+-----------+----------------------+---------------+
+|Module Name              | RTL Object     | Inference | Size (Depth x Width) | Primitives    | 
++-------------------------+----------------+-----------+----------------------+---------------+
+|pipelined_regfile_5stage | im/imemory_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|pipelined_regfile_5stage | dm/dmemory_reg | Implied   | 1 K x 64             | RAM64M x 352  | 
++-------------------------+----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------------------+----------------+-----------+----------------------+---------------+
+|Module Name              | RTL Object     | Inference | Size (Depth x Width) | Primitives    | 
++-------------------------+----------------+-----------+----------------------+---------------+
+|pipelined_regfile_5stage | im/imemory_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|pipelined_regfile_5stage | dm/dmemory_reg | Implied   | 1 K x 64             | RAM64M x 352  | 
++-------------------------+----------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    32|
+|3     |LUT1     |     1|
+|4     |LUT2     |     7|
+|5     |LUT3     |   132|
+|6     |LUT4     |     2|
+|7     |LUT5     |   322|
+|8     |LUT6     |  2004|
+|9     |MUXF7    |   640|
+|10    |MUXF8    |   320|
+|11    |RAM64M   |   343|
+|12    |RAM64X1D |    16|
+|13    |FDRE     |  2537|
+|14    |IBUF     |     2|
+|15    |OBUF     |   883|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |  7242|
+|2     |  C0     |control       |     3|
+|3     |  ALU0   |alu           |    16|
+|4     |  PIPE1  |ID_EXE_stage  |   341|
+|5     |  PIPE2  |EXE_MEM_stage |   164|
+|6     |  PIPE3  |MEM_WB_stage  |   391|
+|7     |  RF0    |regfile       |  4492|
+|8     |  dm     |dmemory       |   810|
+|9     |  im     |imemory       |    58|
+|10    |  pc     |PC1           |    81|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1222.926 ; gain = 791.508
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1222.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1351 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1246.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 359 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 343 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+Synth Design complete, checksum: 971b0aea
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 35 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:04 . Memory (MB): peak = 1246.148 ; gain = 821.191
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/TO0009NG/SC3050/SC3050_lab3_5_stage_pipeline/SC3050_lab3_5_stage_pipeline.runs/synth_1/pipelined_regfile_5stage.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pipelined_regfile_5stage_utilization_synth.rpt -pb pipelined_regfile_5stage_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 16 17:01:41 2025...
